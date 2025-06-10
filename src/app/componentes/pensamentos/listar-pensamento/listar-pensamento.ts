@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-listar-pensamento',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './listar-pensamento.html',
   styleUrls: ['./listar-pensamento.css']
 })
