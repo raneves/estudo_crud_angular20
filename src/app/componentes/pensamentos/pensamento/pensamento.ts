@@ -1,19 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Pensamento_interface } from './pensamento_interface.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-pensamento',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './pensamento.html',
   styleUrls: ['./pensamento.css']
 })
 export class Pensamento implements OnInit{
-    @Input() pensamento = {
-    conteudo: '... Angular 20..',
+
+  @Input() pensamento: Pensamento_interface = {
+    id: '0',
+    conteudo: 'I love Angular',
     autoria: 'Romulo',
     modelo: 'modelo3'
-  }
+  };
 
   constructor() { }
 

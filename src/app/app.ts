@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CriarPensamento } from './componentes/pensamentos/criar-pensamento/criar-pensamento';
 import { ListarPensamento } from "./componentes/pensamentos/listar-pensamento/listar-pensamento";
 import { RouterModule } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
